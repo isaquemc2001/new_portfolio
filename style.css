@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background-color: #50B8E7;
+    color: #ffff;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding: 0.2rem 0;
+    color: #ffff;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #ffff;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.navbar,
+button {
+    font-family: 'Cabin', sans-serif;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 67rem;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-logo {
+    float: left;
+    position: relative;
+    padding-left: 0;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    float: right;
+    position: relative;
+    gap: 20px;
+}
+
+.apresentation {
+    font-family: 'Inconsolata', monospace;
+}
+
+.apresentation-title {
+    font-family: 'Cabin', sans-serif;
+    font-size: 64px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 181px 0 15px 0px;
+}
+
+p {
+    display: flex;
+    text-align: center;
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+}
+
+.button-contact-me {
+    display: flex;
+    width: 205px;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 25px 0 25px 0;
+    transition: 300ms;
+}
+
+.button-contact-me:hover {
+    cursor: pointer;
+    transform: translate3d(2, 0.2em, 0);
+}
+
+.link-contact-me {
+    text-decoration: none;
+}
+
+.link-contact-me:hover {
+    text-decoration: none;
+}
+
+svg {
+    width: 35px;
+    margin-left: 10px;
+}
