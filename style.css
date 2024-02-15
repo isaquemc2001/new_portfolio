@@ -252,3 +252,25 @@ svg {
     margin-left: 25%;
     margin-right: 25%;
 }
+
+.projects{
+    color: #363636;
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+}
+
+.projects-left-content{
+    height: 30vh;
+    width: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.projects-right-content{
+    padding-left: 20px;
+    font-size: 2rem;
+}
