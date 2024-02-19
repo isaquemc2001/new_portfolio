@@ -79,6 +79,10 @@ ul {
 
 /* flare */
 
+.active{
+    text-decoration: dashed;
+}
+
 .nav-menu a {
     text-decoration: none;
     display: block;
@@ -99,9 +103,9 @@ ul {
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
+.active
 
-.nav-menu a:hover::after,
-.nav-menu a:focus::after {
+.nav-menu a:hover::after {
     opacity: 1;
     transform: translate3d(0, 0.2em, 0);
 }
@@ -131,8 +135,9 @@ button {
     padding-left: 0;
     transition: 300ms;
     cursor: default;
-    margin-left: 150px;
-    margin-top: 10px;
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+    width: 5rem;
 }
 
 .logo-name {
