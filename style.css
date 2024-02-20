@@ -103,7 +103,6 @@ ul {
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
 }
-.active
 
 .nav-menu a:hover::after {
     opacity: 1;
