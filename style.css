@@ -327,6 +327,8 @@ object{
     justify-content: space-evenly;
     background-color: #ffff;
     color: #363636;
+    height: auto;
+    padding-bottom: 3rem;
 }
 
 .profile-about-me{
@@ -349,4 +351,8 @@ object{
 
 .description-about-me{
     font-size: 2rem;
+}
+
+.link-contact-me{
+    
 }
