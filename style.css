@@ -325,6 +325,8 @@ object{
     display: flex;
     margin-top: 3rem;
     justify-content: space-evenly;
+    background-color: #ffff;
+    color: #363636;
 }
 
 .profile-about-me{
@@ -335,6 +337,7 @@ object{
 
 .right-about-me{
     width: 100vh;
+    margin-top: 3rem;
 }
 
 .title-about-me{
