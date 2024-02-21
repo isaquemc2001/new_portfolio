@@ -273,10 +273,11 @@ svg {
     color: #363636;
     font-family: 'Cabin', sans-serif;
     display: flex;
+    height: auto;
 }
 
 .projects-left-content{
-    height: 2rem;
+    height: 18rem;
     width: 40%;
     top: 30%;
     position: sticky;
@@ -284,17 +285,17 @@ svg {
     margin-left: 3rem;
     font-size: 4rem;
     color: #ffff;
+    z-index: -1;
 }
 
 .description-left-content{
     font-family: 'Inconsolata', monospace;
-    margin-top: 2rem;
     font-size: 3rem;
     text-transform: initial;
 }
 
 .projects-right-content{
-    padding-left: 20px;
+    padding-left: 1.25rem;
     font-size: 2rem;
     width: 50%;
     margin-top: 5%;
@@ -303,7 +304,6 @@ svg {
 .card-projects{
     width: 45rem;
     height: 30rem;
-    margin-bottom: 3rem;
 }
 
 .title-card-projects{
@@ -318,4 +318,32 @@ svg {
 object{
     width: 45rem;
     height: 25rem;
+}
+
+.about-me{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.profile-about-me{
+    width: 20rem;
+    border-radius: 0.5rem;
+    margin-right: 1.25rem;
+}
+
+.right-about-me{
+    width: 100vh;
+}
+
+.title-about-me{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: initial;
+}
+
+.description-about-me{
+    font-size: 2rem;
 }
