@@ -1,5 +1,5 @@
 // document.addEventListener("DOMContentLoaded", function(){
-//     var projects = document.getElementById("");
+//     var projects = document.getElementById("contact-me");
 //     projects.scrollIntoView();
 // })
 
