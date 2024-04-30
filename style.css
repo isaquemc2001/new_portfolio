@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
 
 body,
 html {
@@ -59,7 +64,7 @@ ul {
   height: 150px;
   background: radial-gradient(
     circle,
-    rgba(0, 212, 255, 1) 18%,
+    rgb(0, 212, 255) 18%,
     rgba(80, 184, 231, 1) 100%
   );
   border-radius: 50%;
@@ -360,79 +365,31 @@ object {
   font-size: 2rem;
 }
 
-.contact-me {
+.contact-me{
   display: flex;
-  justify-content: space-between;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: #ffff;
-  height: auto;
+  height: 80vh;
 }
 
-.message-contact-me {
-  margin-left: 3rem;
-}
-
-.title-contact-me {
-  font-family: "Cabin", sans-serif;
-  font-size: 4rem;
+.title-contact-me{
+  display: flex;
+  position: absolute;
+  font-family: "Cantarell", sans-serif;
+  font-size: 6.25rem;
   color: #363636;
+  /* background-color: #fff; */
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right
 }
 
-hr {
-  height: 0.15rem;
-  background-color: #363636;
-  border: none;
-  border-radius: 25px;
-}
-
-.form-contact-me {
+.left-contact-me{
   display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
+  background-color: #fff !important;
+  width: 25rem;
+  position: relative;
 }
 
-.fullname-contact-me {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fullname-group{
-    display: flex !important;
-    flex-direction: column;
-}
-
-.email-group{
-    display: flex !important;
-    flex-direction: column;
-}
-
-input {
-  margin: 0.5rem 0 0.5rem 0;
-  border-bottom: 1px solid #363636 !important;
-  border: hidden;
-  box-sizing: inherit;
-  width: 30vh;
-}
-
-input:focus{
-    outline: none;
-}
-
-span{
-    color: #363636;
-}
-
-.right-contact-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  background-color: #50b8e7;
-  border-radius: 10px 0 0 10px;
-  width: 50%;
-}
-
-.right-contact-me img {
-  width: 15rem;
+.contact-me-form{
+  /* display: flex; */
+  background-color: red;
 }

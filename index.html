@@ -48,8 +48,9 @@
             specimen book.</p>
 
         <div class="button-group">
-            <a class="link-contact-me" href="isaquehmc@outlook.com" target="_blank" onclick="scrollNavBar('contact-me'); return false;">
-                <button class="button-contact-me" >Contact Me
+            <a class="link-contact-me" href="isaquehmc@outlook.com" target="_blank"
+                onclick="scrollNavBar('contact-me'); return false;">
+                <button class="button-contact-me">Contact Me
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path
                             d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
@@ -130,30 +131,19 @@
     </div>
 
     <div class="contact-me" id="contact-me">
-        <div class="message-contact-me">
-            <div class="title-contact-me">Send me a message</div>
-            <hr>
-            <div class="form-contact-me">
-                <div class="fullname-group">
-                    <span>Fullname</span>
-                    <input type="text" name="Fullname" id="fullname" placeholder="Informe o seu nome completo">
-                </div>
-                <div class="email-group">
-                    <span>Email</span>
-                    <input type="text" name="Email" id="email" placeholder="Informe o seu email">
-                </div>
-            </div>
-            <div>
-                <textarea name="Message" id="message" cols="50" rows="8"></textarea>
-            </div>
+        <div class="left-contact-me">
+            <span class="title-contact-me">Contact-me</span>
         </div>
-        <div class="right-contact-me">
-            <img src="public/IN1.png" alt="contact-me">
-            <div class="contacts">
-                <div>Telefone</div>
-                <div>Email</div>
-                <div>Linkedin</div>
-            </div>
+        <div class="social-links">
+            <img src="/public/social-network/linkedin-logo.svg" alt="linkedin" class="linkedin">
+            <img src="/public/social-network/instagram-logo.svg" alt="instagram" class="instagram">
+            <img src="/public/social-network/microsoft-outlook-logo.svg" alt="outlook" class="outlook">
+        </div>
+        <div class="contact-me-form">
+            <input type="text" class="fullname">
+            <input type="text" class="email">
+            <textarea name="" id="" cols="30" rows="10" class="message"></textarea>
+            <button class="send">Send</button>
         </div>
     </div>
 
