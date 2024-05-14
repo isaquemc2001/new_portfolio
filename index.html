@@ -140,10 +140,25 @@
             <img src="/public/social-network/microsoft-outlook-logo.svg" alt="outlook" class="outlook">
         </div>
         <div class="contact-me-form">
-            <input type="text" class="fullname">
-            <input type="text" class="email">
-            <textarea name="" id="" cols="30" rows="10" class="message"></textarea>
-            <button class="send">Send</button>
+            <form action="">
+                <div class="form_group field">
+                    <input type="input" class="form_field" placeholder="Full name" required="required" id="fullname"
+                        nome="fullname">
+                    <label for="fullname" class="form_label">Full name</label>
+                </div>
+                <div class="form_group field">
+                    <input type="email" class="form_field" placeholder="Your best email" required="required" id="email"
+                        nome="email">
+                    <label for="email" class="form_label">Your best email</label>
+                </div>
+                <div class="form_group field">
+                    <textarea class="form_field" placeholder="Your best email" required="required" id="email"
+                        nome="email" cols="30" rows="10"></textarea>
+                    <label for="email" class="form_label">Your best email</label>
+                </div>
+                <button class="send">Send</button>
+
+            </form>
         </div>
     </div>
 

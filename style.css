@@ -72,18 +72,18 @@ ul {
 }
 
 .flare1 {
-  top: 20%;
-  left: 30%;
+  top: 15vh;
+  left: 65vh;
 }
 
 .flare2 {
-  top: 35%;
-  left: 42%;
+  top: 28vh;
+  left: 90vh;
 }
 
 .flare3 {
-  top: 50%;
-  left: 55%;
+  top: 43vh;
+  left: 115vh;
 }
 
 /* flare */
@@ -367,7 +367,18 @@ object {
 
 .contact-me{
   display: flex;
+  justify-content: space-between;
   height: 80vh;
+  width: 100%;
+}
+
+.left-contact-me{
+  display: flex;
+  background-color: #fff;
+  width: 80vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-contact-me{
@@ -376,20 +387,100 @@ object {
   font-family: "Cantarell", sans-serif;
   font-size: 6.25rem;
   color: #363636;
-  /* background-color: #fff; */
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   text-orientation: sideways-right
 }
 
-.left-contact-me{
+.social-links{
   display: flex;
-  background-color: #fff !important;
-  width: 25rem;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 11rem;
+  width: 4rem;
+  border-radius: 15px;
+}
+
+.social-links img{
+  width: 3rem;
 }
 
 .contact-me-form{
-  /* display: flex; */
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  margin-right: 45vh;
+}
+
+.contact-me-form form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* input custom css */
+
+.form_group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 180px;
+}
+
+.form_field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fafafa;
+  outline: 0;
+  font-size: 15px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form_field::placeholder {
+  color: transparent;
+}
+
+.form_field:placeholder-shown ~ .form_label {
+  font-size: 15px;
+  cursor: text;
+  top: 20px;
+}
+
+.form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 15px;
+  color: #fafafa;
+  pointer-events: none;
+}
+
+.form_field:focus {
+  padding-bottom: 2px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image-slice: 1;
+}
+
+.form_field:focus ~ .form_label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #363636;
+}
+
+/* reset input */
+.form_field:required, .form_field:invalid {
+  box-shadow: none;
 }
