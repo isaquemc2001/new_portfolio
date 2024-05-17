@@ -130,16 +130,19 @@
         </div>
     </div>
 
+
     <div class="contact-me" id="contact-me">
         <div class="left-contact-me">
             <span class="title-contact-me">Contact-me</span>
         </div>
-        <div class="social-links">
-            <img src="/public/social-network/linkedin-logo.svg" alt="linkedin" class="linkedin">
-            <img src="/public/social-network/instagram-logo.svg" alt="instagram" class="instagram">
-            <img src="/public/social-network/microsoft-outlook-logo.svg" alt="outlook" class="outlook">
-        </div>
+
         <div class="contact-me-form">
+            <div class="social-links">
+                <img src="/public/social-network/linkedin-logo.svg" alt="linkedin" class="linkedin">
+                <img src="/public/social-network/instagram-logo.svg" alt="instagram" class="instagram">
+                <img src="/public/social-network/microsoft-outlook-logo.svg" alt="outlook" class="outlook">
+            </div>
+
             <form action="">
                 <div class="form_group field">
                     <input type="input" class="form_field" placeholder="Full name" required="required" id="fullname"
@@ -152,15 +155,24 @@
                     <label for="email" class="form_label">Your best email</label>
                 </div>
                 <div class="form_group field">
-                    <textarea class="form_field" placeholder="Your best email" required="required" id="email"
+                    <textarea class="form_field" placeholder="Write your message" required="required" id="email"
                         nome="email" cols="30" rows="10"></textarea>
-                    <label for="email" class="form_label">Your best email</label>
+                    <label for="email" class="form_label">Write your message</label>
                 </div>
-                <button class="send">Send</button>
-
+                <div class="button-group">
+                    <button type="submit" class="button-contact-me form-button">Send
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M16.0037 9.41421L7.39712 18.0208L5.98291 16.6066L14.5895 8H7.00373V6H18.0037V17H16.0037V9.41421Z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
             </form>
         </div>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>
