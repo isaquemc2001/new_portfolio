@@ -410,6 +410,22 @@ object {
   width: 3rem;
 }
 
+@media (max-width:1495.20px){
+  .title-contact-me{
+    font-size: 5.8rem;
+  }
+
+  .social-links{
+    bottom: 59vh;
+    width: 3.8rem;
+    height: 10rem;
+  }
+
+  .social-links img{
+    width: 2.8rem;
+  }
+}
+
 .contact-me-form {
   display: flex;
   justify-content: center;
