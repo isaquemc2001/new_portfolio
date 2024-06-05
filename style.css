@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-:root{
+:root {
   --blue: #50b8e7;
+  --blue-glass: rgba(80, 184, 231, 0.3);
   --dark-blue: #306e8b;
   --background-light: #fafafa;
   --background-dark: #151515;
@@ -45,6 +46,19 @@ ul {
   padding: 0;
 }
 
+.background-teste{
+  position: absolute;
+  background-color: var(--blue);
+  width: 100%;
+  height: 65vh;
+}
+
+@media (max-width:1495.20px){
+  .background-teste{
+    height: 83vh;
+  }
+}
+
 .glass-effect {
   backdrop-filter: blur(5px);
 }
@@ -52,10 +66,9 @@ ul {
 .glass {
   position: absolute;
   width: 60rem;
-  height: 30rem;
+  height: 25rem;
   top: 15%;
   left: 17%;
-  z-index: -20;
   backdrop-filter: blur(10px);
 }
 
@@ -75,7 +88,6 @@ ul {
       #00d4ff 18%,
       #50b8e7 100%);
   border-radius: 50%;
-  z-index: -1;
 }
 
 .flare1 {
@@ -132,10 +144,10 @@ button {
 
 .navbar {
   display: flex;
-  gap: 20px;
-  padding: 10px 0px;
+  gap: 18px;
+  padding: 0px 0px;
   width: 100%;
-  height: auto;
+  height: 6.2rem;
   max-width: 100%;
   justify-content: space-between;
   margin-right: auto;
@@ -153,8 +165,8 @@ button {
   transition: 300ms;
   cursor: default;
   margin-left: 5rem;
-  margin-top: 0.5rem;
-  width: 5rem;
+  margin-top: 0.4rem;
+  width: 4.75rem;
 }
 
 .logo-name {
@@ -179,7 +191,7 @@ button {
   font-family: "Inconsolata", monospace;
   animation-name: showup;
   animation: showup 0.5s ease-in-out;
-  background-color: var(--blue);
+  /* background-color: var(--blue); */
   color: var(--white);
   padding-bottom: 3rem;
   backdrop-filter: blur(10px);
@@ -420,18 +432,18 @@ object {
   width: 3rem;
 }
 
-@media (max-width:1495.20px){
-  .title-contact-me{
+@media (max-width:1495.20px) {
+  .title-contact-me {
     font-size: 5.8rem;
   }
 
-  .social-links{
+  .social-links {
     bottom: 59vh;
     width: 3.8rem;
     height: 10rem;
   }
 
-  .social-links img{
+  .social-links img {
     width: 2.8rem;
   }
 }
