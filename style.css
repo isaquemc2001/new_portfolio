@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root{
+  --blue: #50b8e7;
+  --dark-blue: #306e8b;
+  --background-light: #fafafa;
+  --background-dark: #151515;
+  --white: #ffff;
+  --black: #363636;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,8 +22,8 @@ html {
 
 html {
   scroll-behavior: smooth;
-  background-color: #fafafa;
-  color: #ffff;
+  background-color: var(--background-light);
+  color: var(--black);
   text-transform: capitalize;
 }
 
@@ -53,7 +62,7 @@ ul {
 /* flare */
 
 .flare-effect {
-  background-color: rgb(0, 212, 255);
+  background-color: #00d4ff;
   position: absolute;
 }
 
@@ -63,10 +72,10 @@ ul {
   width: 150px;
   height: 150px;
   background: radial-gradient(circle,
-      rgb(0, 212, 255) 18%,
-      rgba(80, 184, 231, 1) 100%);
+      #00d4ff 18%,
+      #50b8e7 100%);
   border-radius: 50%;
-  z-index: -25;
+  z-index: -1;
 }
 
 .flare1 {
@@ -134,7 +143,7 @@ button {
   position: fixed;
   transition: 300ms;
   z-index: 100;
-  background-color: #50b8e7;
+  background-color: var(--blue);
 }
 
 .nav-logo {
@@ -170,8 +179,10 @@ button {
   font-family: "Inconsolata", monospace;
   animation-name: showup;
   animation: showup 0.5s ease-in-out;
-  background-color: #50b8e7;
+  background-color: var(--blue);
+  color: var(--white);
   padding-bottom: 3rem;
+  backdrop-filter: blur(10px);
 }
 
 @keyframes showup {
@@ -258,8 +269,7 @@ svg {
 .experience {
   width: 100%;
   height: auto;
-  background-color: #fafafa;
-  color: #363636;
+  /* color: #363636; */
   font-family: "Cabin", sans-serif;
   padding: 0.6rem 0 5rem 0;
 }
@@ -333,7 +343,7 @@ object {
   margin-top: 3rem;
   padding-top: 5rem;
   justify-content: space-evenly;
-  color: #363636;
+  /* color: #363636; */
   height: auto;
   padding-bottom: 3rem;
 }
@@ -342,7 +352,7 @@ object {
   width: 20rem;
   border-radius: 0.5rem;
   margin-right: 1.25rem;
-  -webkit-box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.749);
   -moz-box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 6px 1px rgba(0, 0, 0, 0.75);
 }
@@ -465,7 +475,7 @@ object {
   border-bottom: 1px solid #fafafa;
   outline: 0;
   font-size: 15px;
-  color: #fff;
+  color: #ffff;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
