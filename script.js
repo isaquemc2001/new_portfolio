@@ -5,7 +5,14 @@
 
 function scrollNavBar(sectionName){
         const section = document.getElementById(sectionName);
-        if(section){
+
+        if(section && sectionName != 'projects'){
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'nearest'
+            });
+        }else{
             section.scrollIntoView();
         }
         sectionName = false;
